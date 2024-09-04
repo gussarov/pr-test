@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="EST">
+<head>
+    <meta charset="utf-8">
+    <title>Raha küsimine</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://static.swedbank.se 'unsafe-inline' data:">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+    <meta name="robots" content="noindex" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://static.swedbank.se/cdn/pr-pay/assets/1.0/favicon.ico">
+    <link rel="apple-touch-icon" href="https://static.swedbank.se/cdn/pr-pay/assets/1.0/img/apple-touch-icon.png">
+
+    <link href="https://static.swedbank.se/cdn/pr-pay/webcomponents/2.8.4/assets/styles/shared-styles.min.css" rel="stylesheet">
+    <script src="https://static.swedbank.se/cdn/pr-pay/webcomponents/2.8.4/assets/js/shared-components.min.js" type="text/javascript"></script>
+
+    <link href="https://static.swedbank.se/cdn/pr-pay/webcomponents/2.8.4/assets/styles/layout-box.css" rel="stylesheet">
+    <link href="https://static.swedbank.se/cdn/pr-pay/assets/1.0/css/styles.css" rel="stylesheet">
+
+    <script src="https://static.swedbank.se/cdn/pr-pay/webcomponents/2.8.4/assets/js/shared-components.en.js" type="text/javascript"></script>
+    <script src="https://static.swedbank.se/cdn/pr-pay/assets/1.0/js/scripts.js" type="text/javascript"></script>
+
+    <meta property="og:image" content="https://static.swedbank.se/cdn/pr-pay/assets/1.0/img/apple-touch-icon.png">
+
+    <meta property="og:url" content="https://www.swedbank.ee/pay?id=140y7p1au560o"/>
+    <meta property="og:title" content="Raha küsimine"/>
+    <meta property="og:description" content="Raha küsib ALEKSEI G*** summas 0.05 EUR"/>
+
+    <meta property="al:ios:url" content="swedbank-ee://x-callback-url/pay?id=140y7p1au560o"/>
+    <meta property="al:ios:app_store_id" content="id434814718"/>
+    <meta property="al:ios:app_name" content="swedbank-eestis"/>
+
+    <meta property="al:android:url" content="https://www.swedbank.ee/pay?id=140y7p1au560o"/>
+    <meta property="al:android:package" content="com.swedbank"/>
+    <meta property="al:android:app_name" content="Swedbank Eestis"/>
+</head>
+<body>
+<div class="viewport">
+    <ui-brandingbar></ui-brandingbar>
+    <div class="page">
+        <header class="page-header">
+            <div class="page-header__wrapper">
+                <div class="logo">
+                    <a href="https://www.swedbank.ee">
+                        <img src="https://static.swedbank.se/cdn/pr-pay/webcomponents/2.8.4/assets/images/swedbank-logo.svg" alt="Swedbank logo">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="page-content">
+            <div class="page-content__wrapper">
+                <section class="frame">
+                    <div class="title-container">
+                        <h2>Raha küsimine</h2>
+                        <ui-dropdown id="language-bar" name="language-picker" layout="lang" hide-selected mobile-native>
+                            <select>
+                                <option id="ET"
+                                        value="ET"
+                                        selected="selected">ET</option>
+                                <option id="RU"
+                                        value="RU">RU</option>
+                                <option id="EN"
+                                        value="EN">EN</option>
+                            </select>
+                        </ui-dropdown>
+                    </div>
+                    
+                    <div>
+                        <ui-field label="ID" class="-text">140y7p1au560o</ui-field>
+                        <ui-field label="Saaja" class="-text">ALEKSEI G***</ui-field>
+                        <ui-field label="Konto" class="-text">EE***7324</ui-field>
+                        <ui-field label="Summa" class="-text">
+                            <ui-amount value="0.05" currency="EUR"
+                                       accuracy="2"></ui-amount>
+                        </ui-field>
+                        <ui-field label="Selgitus" class="-text">Test 🍏🍎</ui-field>
+
+                        <ui-buttonbar>
+                            <a class="button -guiding"
+                               href="https://www.swedbank.ee/private/d2d/payments2/smartNew?id=140y7p1au560o&amp;paymentFromPaymentRequest=true&amp;forceLogin=true">Jätkan netipangas</a>
+
+                            <a class="button -next"
+                               href="swedbank-ee://x-callback-url/pay?id=140y7p1au560o">Jätkan äpis</a>
+                        </ui-buttonbar>
+                        
+                    </div>
+                </section>
+                <section class="frame" id="appIcons">
+                    <h3>Laadi alla Swedbanki äpp</h3>
+                    <br/>
+                    <a href="http://itunes.apple.com/us/app/swedbank-eestis/id434814718"
+                       target="_blank">
+                        <img src="https://static.swedbank.se/cdn/pr-pay/assets/1.0/img/app-store-new.png" alt="Mobile application for iPhone"/>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.swedbank" target="_blank">
+                        <img src="https://static.swedbank.se/cdn/pr-pay/assets/1.0/img/play-store-new.png" alt="Mobile application for Android"/>
+                    </a>
+                </section>
+            </div>
+        </main>
+    </div>
+</div>
+
+<!-- For modal windows -->
+<ui-modal-controller></ui-modal-controller>
+<!-- For icons -->
+<ui-sprite inline="inline" src="https://static.swedbank.se/cdn/pr-pay/webcomponents/2.8.4/assets/styles/images/icons.symbol.svg"></ui-sprite>
+</body>
+
+</html>
