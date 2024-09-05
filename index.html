@@ -32,6 +32,16 @@
     <meta property="al:android:url" content="https://www.swedbank.ee/pay?id=140y7p1au560o"/>
     <meta property="al:android:package" content="com.swedbank"/>
     <meta property="al:android:app_name" content="Swedbank Eestis"/>
+    <script>
+        function isFacebookMessenger() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            
+            alert(ua);
+            
+            // Check if the userAgent contains "FBAN" or "FBAV" which indicate Facebook or Messenger apps
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+        }
+    </script>
 </head>
 <body>
 <div class="viewport">
@@ -76,12 +86,14 @@
 
                         <ui-buttonbar>
                             <a class="button -guiding"
-                               href="https://www.swedbank.ee/private/d2d/payments2/smartNew?id=140y7p1au560o&amp;paymentFromPaymentRequest=true&amp;forceLogin=true">Jätkan netipangas</a>
+                               href="#" onclick="isFacebookMessenger()">Test UA</a>
 
                             <a class="button -next"
-                               href="swedbank-ee://x-callback-url/pay?id=140y7p1au560o">Jätkan äpis (x-callback)</a>
+                               href="swedbank-ee://x-callback-url/pay?id=140y7p1au560o">X-callback-url</a>
                             <a class="button -next"
-                               href="https://www.swedbank.ee/pay?id=140y7p1au560o">Jätkan äpis (Universal link)</a>
+                               href="https://www.swedbank.ee/pay?id=140y7p1au560o">Universal link</a>
+                            <a class="button -next"
+                               href="https://rb.gy/im7hi9">URL Shortener (Redirect)</a>
 
                         </ui-buttonbar>
                         
