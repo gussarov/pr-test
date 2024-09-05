@@ -36,7 +36,7 @@
         function isFacebookMessenger() {
             var ua = navigator.userAgent || navigator.vendor || window.opera;
             
-            alert(ua);
+            document.getElementById('ua-test').innerHTML = ua
             
             // Check if the userAgent contains "FBAN" or "FBAV" which indicate Facebook or Messenger apps
             return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
@@ -83,7 +83,7 @@
                                        accuracy="2"></ui-amount>
                         </ui-field>
                         <ui-field label="Selgitus" class="-text">Test 🍏🍎</ui-field>
-
+                        <ui-field label="User-agent" class="-text" id="ua-test">User agent</ui-field>
                         <ui-buttonbar>
                             <a class="button -guiding"
                                href="#" onclick="isFacebookMessenger()">Test UA</a>
